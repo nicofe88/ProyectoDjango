@@ -10,4 +10,7 @@ def signup(request):
     else:
         form = UserRegister()
 
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'social/signup.html', {'form': form})
+
+def social_index(request):
+    return render(request, 'social/social_index.html')
