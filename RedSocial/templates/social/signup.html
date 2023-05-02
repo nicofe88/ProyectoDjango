@@ -1,0 +1,15 @@
+{% extends "./signup_base.html" %}
+
+{% block titulo %}Signup user{% endblock titulo %}
+
+{% block content %}
+<h2>User Registration</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Submit</button>
+
+</form>
+
+{% endblock %}
