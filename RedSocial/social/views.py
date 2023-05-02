@@ -13,4 +13,4 @@ def signup(request):
     return render(request, 'social/signup.html', {'form': form})
 
 def social_index(request):
-    return render(request, 'social/social_index.html')
+    return render(request, 'social/social_base.html')
